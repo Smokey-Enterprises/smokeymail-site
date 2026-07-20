@@ -3,155 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smokey Mail Services - Private. Reliable. Yours.</title>
-    <!-- Tailwind CSS CDN for easy styling -->
+    <title>Smokey Mail - Professional, Privacy-First Business Email</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts for Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles to override or extend Tailwind, and for nature theme */
         body {
             font-family: 'Inter', sans-serif;
-            /* Subtle nature-inspired gradient background */
-            background: linear-gradient(to bottom right, #e0f2f7, #c8e6c9); /* Light blue to light green */
-            color: #212121; /* Dark grey for good contrast */
+            background: linear-gradient(to bottom right, #f0fdf4, #e0f2fe);
+            color: #1e293b;
         }
-        /* Hero section background image for nature theme */
         .hero-section {
-            /* Updated to a Great Smoky Mountains image from Unsplash */
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Clifftops4-7-07.jpg');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
         }
-        /* Overlay for better text readability on hero image */
         .hero-overlay {
-            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            background-color: rgba(15, 23, 42, 0.65);
         }
-        /* Custom button style for a natural, slightly earthy feel */
         .btn-primary {
-            background-color: #4CAF50; /* Green */
+            background-color: #16a34a;
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 9999px; /* Fully rounded */
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            padding: 0.75rem 1.75rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .btn-primary:hover {
-            background-color: #66bb6a; /* Lighter green on hover */
+            background-color: #15803d;
             transform: translateY(-2px);
         }
-        /* Ensure form elements have consistent styling */
-        input[type="email"],
-        textarea {
-            border: 1px solid #a5d6a7; /* Light green border */
-            padding: 0.75rem;
-            border-radius: 0.5rem; /* Rounded corners */
-            width: 100%;
-            box-sizing: border-box; /* Include padding in width */
-            transition: border-color 0.3s ease;
-        }
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #4CAF50; /* Green on focus */
-            box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2); /* Green glow */
-        }
-        /* Navigation bar styling */
         .navbar {
-            background-color: rgba(45, 55, 72, 0.9); /* Dark grey with slight transparency */
-            backdrop-filter: blur(5px); /* Frosted glass effect */
+            background-color: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased min-h-screen flex flex-col justify-between">
     <!-- Navigation Bar -->
     <nav class="navbar p-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-white">Smokey Mail</a>
-            <div class="space-x-4">
-                <a href="index.html" class="text-green-300 font-semibold">Home</a>
-                <a href="about.html" class="text-white hover:text-green-300 transition-colors duration-200">About Us</a>
-                <a href="pricing.html" class="text-white hover:text-green-300 transition-colors duration-200">Pricing</a>
-                <a href="contact.html" class="text-white hover:text-green-300 transition-colors duration-200">Contact</a>
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wide">Smokey<span class="text-green-400">Mail</span></a>
+            <div class="space-x-6">
+                <a href="index.html" class="text-green-400 font-semibold">Home</a>
+                <a href="pricing.html" class="text-white hover:text-green-300 transition-colors">Pricing</a>
+                <a href="contact.html" class="text-white hover:text-green-300 transition-colors">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="hero-section text-white py-20 md:py-32 relative">
+    <!-- Hero Header Section -->
+    <header class="hero-section text-white py-24 md:py-36 relative">
         <div class="hero-overlay absolute inset-0"></div>
-        <div class="container mx-auto px-4 text-center relative z-10">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">Smokey Mail</h1>
-            <p class="text-xl md:text-2xl mb-8">Private. Reliable. Yours. <br class="md:hidden">Embrace true digital freedom.</p>
-            <a href="#features" class="btn-primary inline-block text-lg font-semibold">Discover Privacy</a>
+        <div class="container mx-auto px-4 text-center relative z-10 max-w-3xl">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Enterprise Email for Growing Businesses</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">Secure custom domain hosting, ad-free privacy, and guaranteed deliverability powered by world-class cloud infrastructure.</p>
+            <a href="pricing.html" class="btn-primary inline-block text-lg font-semibold">Get Started Today</a>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl -mt-16 relative z-20 mb-8">
+    <!-- Core Features Section -->
+    <section class="py-16 bg-white rounded-xl shadow-xl mx-4 md:mx-auto max-w-5xl -mt-12 relative z-20 mb-12">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Why Choose Smokey Mail?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Feature 1: End-to-End Privacy -->
-                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <span class="text-5xl mb-4">🛡️</span>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-700">End-to-End Privacy</h3>
-                    <p class="text-gray-600">Your communications are encrypted from sender to receiver, ensuring nobody can snoop.</p>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Upgrade Your Business Email?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-slate-50 rounded-xl">
+                    <span class="text-4xl mb-3 block">🔒</span>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">100% Privacy-Focused</h3>
+                    <p class="text-gray-600">Zero ad targeting or data scraping. Your communications stay strictly private and encrypted.</p>
                 </div>
-                <!-- Feature 2: Custom Domains -->
-                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <span class="text-5xl mb-4">📧</span>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Custom Domains</h3>
-                    <p class="text-gray-600">Use your own domain for a professional and personalized email address.</p>
+                <div class="text-center p-6 bg-slate-50 rounded-xl">
+                    <span class="text-4xl mb-3 block">🌐</span>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Custom Domain Setup</h3>
+                    <p class="text-gray-600">Ditch `@gmail.com` and build customer trust with your name@yourbusiness.com address.</p>
                 </div>
-                <!-- Feature 3: Webmail + IMAP Support -->
-                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <span class="text-5xl mb-4">📬</span>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Webmail + IMAP</h3>
-                    <p class="text-gray-600">Access your mail via our secure web interface or your favorite email client.</p>
-                </div>
-                <!-- Feature 4: Based in the U.S. – Not big tech -->
-                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <span class="text-5xl mb-4">🇺🇸</span>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-700">U.S. Based & Independent</h3>
-                    <p class="text-gray-600">We're not big tech. We're a small, dedicated team focused on your privacy.</p>
+                <div class="text-center p-6 bg-slate-50 rounded-xl">
+                    <span class="text-4xl mb-3 block">⚙️</span>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Fully Managed DNS</h3>
+                    <p class="text-gray-600">We configure SPF, DKIM, and DMARC for you so your emails land in the inbox, not spam.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Privacy Philosophy Section -->
-    <section class="py-16 md:py-24 bg-green-50 rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl mb-8">
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8 text-gray-800">Our Privacy Philosophy</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                At Smokey Mail, we believe your digital communications are your own. We are committed to providing a secure and private email service that respects your fundamental right to privacy. We don't scan your emails, sell your data, or compromise your trust.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Our infrastructure is built with privacy at its core, utilizing robust encryption and adhering to strict data protection principles. Choose Smokey Mail for peace of mind, knowing your conversations remain truly private.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call to Action for Pricing -->
-    <section class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl mb-8">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8 text-gray-800">Ready to Experience True Privacy?</h2>
-            <p class="text-2xl text-gray-700 mb-6">Explore our plans starting at just <strong class="text-green-600">$3/month</strong></p>
-            <a href="pricing.html" class="btn-primary inline-block mt-8 text-lg font-semibold">View Plans & Pricing</a>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025 Smokey Mail Services. All rights reserved.</p>
-            <p class="text-gray-400 text-sm mt-2">Built with privacy and nature in mind.</p>
+            <p class="text-gray-400">&copy; 2026 Smokey Mail. All rights reserved.</p>
+            <p class="text-gray-500 text-sm mt-1">Smokey Mail is a brand operated under Smokey Enterprises, LLC.</p>
         </div>
     </footer>
-</body>
-</html>
 </body>
 </html>
