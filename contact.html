@@ -39,19 +39,18 @@
             border-color: #4CAF50;
             box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
         }
-        /* Navigation bar styling */
         .navbar {
-            background-color: rgba(45, 55, 72, 0.9); /* Dark grey with slight transparency */
-            backdrop-filter: blur(5px); /* Frosted glass effect */
+            background-color: rgba(45, 55, 72, 0.9);
+            backdrop-filter: blur(5px);
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased min-h-screen flex flex-col justify-between">
     <!-- Navigation Bar -->
     <nav class="navbar p-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-white">Smokey Mail</a>
-            <div class="space-x-4">
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wide">Smokey<span class="text-green-400">Mail</span></a>
+            <div class="space-x-4 md:space-x-6 text-sm md:text-base">
                 <a href="index.html" class="text-white hover:text-green-300 transition-colors duration-200">Home</a>
                 <a href="about.html" class="text-white hover:text-green-300 transition-colors duration-200">About Us</a>
                 <a href="pricing.html" class="text-white hover:text-green-300 transition-colors duration-200">Pricing</a>
@@ -65,7 +64,7 @@
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Get in Touch</h1>
             <p class="text-lg text-gray-700 text-center mb-8 max-w-2xl mx-auto">
-                Have questions about our privacy-focused email service or need assistance? Fill out the form below, and we'll get back to you as soon as possible.
+                Have questions about our privacy-focused email service or need assistance setting up your custom domain? Fill out the form below, and we'll get back to you as soon as possible.
             </p>
             <form action="https://formspree.io/f/movlqjga" method="POST" class="max-w-md mx-auto">
                 <div class="mb-4">
@@ -79,9 +78,8 @@
                 <button type="submit" class="btn-primary w-full text-lg font-semibold">Send Message</button>
             </form>
             <div class="text-center mt-12 text-gray-700">
-                <p class="mb-2">Prefer direct contact?</p>
-                <p>Email us at: <a href="mailto:info@smokeymail.com" class="text-green-600 hover:underline">info@smokeymail.com</a></p>
-                <p>Call us at: <a href="tel:+15551234567" class="text-green-600 hover:underline">(555) 123-4567</a></p>
+                <p class="mb-2">Prefer direct email?</p>
+                <p>Email us at: <a href="mailto:brian@smokeymail.com" class="text-green-600 font-semibold hover:underline">brian@smokeymail.com</a></p>
             </div>
         </div>
     </section>
@@ -89,8 +87,9 @@
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-8 mt-auto">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025 Smokey Mail Services. All rights reserved.</p>
-            <p class="text-gray-400 text-sm mt-2">Built with privacy and nature in mind.</p>
+            <p class="text-gray-400">&copy; 2026 Smokey Mail. All rights reserved.</p>
+            <p class="text-gray-400 text-sm mt-2">Smokey Mail is operated under Smokey Enterprises, LLC.</p>
+            <p class="text-gray-500 text-xs mt-2">Need full CRM setup or IT consulting? Visit <a href="https://smokeyit.com" class="text-green-400 hover:underline">SmokeyIT.com</a></p>
         </div>
     </footer>
 </body>
